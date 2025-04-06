@@ -6,5 +6,69 @@
     <title>Password Generator</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-display">
+            <span class="password-display__display">P4$SW0rD!</span>
+            <button class="password-display__copy-btn" title="Copy to clipboard">
+                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0H2C0.9 0 0 0.9 0 2V14H2V2H12V0ZM15 4H6C4.9 4 4 4.9 4 6V18C4 19.1 4.9 20 6 20H15C16.1 20 17 19.1 17 18V6C17 4.9 16.1 4 15 4ZM15 18H6V6H15V18Z" fill="#A4FFAF"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="settings">
+            <div class="settings__length length">
+                <div class="length__label">
+                    <span>Character Length</span>
+                    <span class="length__label_value">10</span>
+                </div>
+                <input type="range" class="length__length-slider" min="4" max="20" value="10">
+            </div>
+            
+            <div class="settings__checkboxes">
+                <label class="checkbox-container">
+                    <input type="checkbox" class="checkbox-uppercase" checked>
+                    <span class="checkbox-checkmark"></span>
+                    Include Uppercase Letters
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="checkbox-lowercase" checked>
+                    <span class="checkbox-checkmark"></span>
+                    Include Lowercase Letters
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="checkbox-numbers" checked>
+                    <span class="checkbox-checkmark"></span>
+                    Include Numbers
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="checkbox-symbols" checked>
+                    <span class="checkbox-checkmark"></span>
+                    Include Symbols
+                </label>
+            </div>
+            
+            <div class="settings__strength strength">
+                <span>STRENGTH</span>
+                <div class="strength__bars">
+                    <div class="strength__bars-label">MEDIUM</div>
+                    <div class="strength__bars_display">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar empty"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="settings__generate-btn">
+                GENERATE
+                <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#24232C" d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
 </body>
 </html>
